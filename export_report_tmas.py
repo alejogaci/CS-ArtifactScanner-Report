@@ -223,7 +223,7 @@ def addGraph(workbook, worksheet, sheet_name, year_counts):
     worksheet.insert_chart('P18', cve_year_chart)
 
 def isMalwareScan(json):
-    if "vulnerability" in json and "malware" in json:
+    if "vulnerabilities" in json and "malware" in json:
         return True
     return False
 
