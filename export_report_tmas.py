@@ -83,7 +83,7 @@ def run_command(command):
 def proces_data(data, image_name, timestamp):
     malware_sumary= ""
     if isMalwareScan(data) == True:
-        value = data["vulnerability"]
+        value = data["vulnerabilities"]
         malware_sumary = {
             'Total Malware Found': data["malware"]["scanResult"],
         }
